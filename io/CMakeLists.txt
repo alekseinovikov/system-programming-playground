@@ -14,6 +14,11 @@ add_executable(dup
         dup.c
 )
 
+add_executable(fd_off
+        fd_off.c
+)
+
+
 target_link_libraries(copy
         PRIVATE
         tlpi_lib
@@ -30,6 +35,11 @@ target_link_libraries(atomic_append
 )
 
 target_link_libraries(dup
+        PRIVATE
+        tlpi_lib
+)
+
+target_link_libraries(fd_off
         PRIVATE
         tlpi_lib
 )
