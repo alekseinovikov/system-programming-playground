@@ -10,6 +10,10 @@ add_executable(atomic_append
         atomic_append.c
 )
 
+add_executable(dup
+        dup.c
+)
+
 target_link_libraries(copy
         PRIVATE
         tlpi_lib
@@ -21,6 +25,11 @@ target_link_libraries(lseek
 )
 
 target_link_libraries(atomic_append
+        PRIVATE
+        tlpi_lib
+)
+
+target_link_libraries(dup
         PRIVATE
         tlpi_lib
 )
