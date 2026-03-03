@@ -12,6 +12,7 @@ add_subdirectory(lib)
 file(GLOB_RECURSE SAMPLE_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_SOURCE_DIR}/hello/*.c"
     "${CMAKE_SOURCE_DIR}/io/*.c"
+    "${CMAKE_SOURCE_DIR}/proc/*.c"
 )
 
 set(_legacy_names "")
